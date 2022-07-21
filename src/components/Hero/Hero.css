@@ -1,0 +1,201 @@
+.Hero {
+  display: flex;
+  height: 100vh;
+
+  justify-content: space-between;
+}
+.Left-h {
+  flex: 3;
+  padding: 1.5rem 2rem 1rem 3rem;
+}
+.Right-h {
+  flex: 1;
+  position: relative;
+  background-color: var(--orange);
+  opacity: 95%;
+}
+.The-best-gym {
+  background-color: rgb(50, 48, 54);
+  padding: 0.8rem 1.1rem;
+  width: fit-content;
+  border-radius: 2rem;
+  margin-top: 5rem;
+  margin-left: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  position: relative;
+  align-items: center;
+  word-spacing: 2px;
+}
+.The-best-gym > div {
+  background-color: var(--orange);
+  width: 6rem;
+  height: 80%;
+  border-radius: 2rem;
+  position: absolute;
+  left: 0.4rem;
+  animation-name: slide;
+  animation-duration: 6000ms;
+  animation-delay: 500ms;
+}
+.The-best-gym > span {
+  z-index: 5;
+}
+@keyframes slide {
+  0% {
+    left: 0.4rem;
+  }
+  50% {
+    left: 10.7rem;
+  }
+  100% {
+    left: 0.4rem;
+  }
+}
+.Hero-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-transform: uppercase;
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Hero-text > div:nth-child(3) {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 200;
+  text-transform: none;
+  width: 80%;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.Stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 60%;
+}
+.Stats > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Stats > div > span:nth-child(1) {
+  font-size: 2rem;
+  color: white;
+}
+.Stats > div > span:nth-child(2) {
+  font-size: 1rem;
+  color: var(--gray);
+  text-transform: uppercase;
+  text-align: center;
+}
+.Hero-actions {
+  display: flex;
+  align-items: center;
+
+  color: white;
+  gap: 1rem;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+}
+
+.Hero-actions > button:nth-child(1) {
+  background-color: var(--orange);
+}
+.Hero-actions > button:nth-child(2) {
+  background-color: transparent;
+  border: solid 1px var(--orange);
+}
+.Right-h > button {
+  position: absolute;
+  color: black;
+  /* border: 1px solid black; */
+  box-shadow: 2px 2px 5px black;
+  right: 20%;
+  top: 10%;
+}
+.Right-h > button:hover {
+  background-color: var(--darkGrey);
+  color: white;
+}
+.heart-rate {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  position: absolute;
+  right: 40%;
+  transform: translateX(25%);
+  top: 25%;
+  background-color: var(--darkGrey);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+.heart-rate > img {
+  height: 2rem;
+}
+.heart-rate > span:nth-child(2) {
+  color: var(--gray);
+  font-size: 1rem;
+}
+.heart-rate > span:nth-child(3) {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hero_image {
+  width: 23rem;
+  position: absolute;
+  right: 50%;
+
+  bottom: 0;
+  z-index: -1;
+}
+.hero_image_back {
+  position: absolute;
+  top: 10%;
+  right: 110%;
+  z-index: -3;
+}
+.Calories {
+  position: absolute;
+  bottom: 20%;
+  right: 150%;
+  background-color: var(--caloryCard);
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  align-items: center;
+}
+.Calories > img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.Calories > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.Calories > div > span:nth-child(1) {
+  color: var(--gray);
+  font-size: 1rem;
+}
+.Calories > div > span:nth-child(2) {
+  color: white;
+  font-size: 1.2rem;
+}

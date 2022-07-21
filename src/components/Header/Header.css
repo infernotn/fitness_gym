@@ -1,0 +1,21 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+}
+.Logo {
+  height: 2.5rem;
+}
+.Header-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.Header-menu > li:hover {
+  cursor: pointer;
+  color: var(--orange);
+}

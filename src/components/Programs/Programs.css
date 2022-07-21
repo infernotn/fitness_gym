@@ -1,0 +1,75 @@
+.Programs {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 3.5rem;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.Title-p {
+  width: 100%;
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0rem;
+  flex-wrap: wrap;
+}
+.ProgramsCards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 3;
+  flex-wrap: wrap;
+}
+.ProgramCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--darkGrey);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  width: 15rem;
+}
+.ProgramCard:hover {
+  background-color: var(--orange);
+}
+.ProgramCard > img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.ProgramCard > span:nth-child(2) {
+  margin: 1rem -0rem;
+  font-size: 1rem;
+}
+.ProgramCard > span:nth-child(3) {
+  margin: 1rem -0rem;
+  font-size: 0.8rem;
+  font-weight: normal;
+  flex-wrap: wrap;
+}
+.ProgramCard > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 2rem;
+
+  margin: 1rem -0rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.ProgramCard > div > img {
+  width: 1.5rem;
+}
