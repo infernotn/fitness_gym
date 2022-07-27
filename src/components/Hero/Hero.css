@@ -1,7 +1,7 @@
 .Hero {
   display: flex;
-  height: 100vh;
-
+  min-height: 100vh;
+  width: 100vw;
   justify-content: space-between;
 }
 .Left-h {
@@ -12,7 +12,7 @@
   flex: 1;
   position: relative;
   background-color: var(--orange);
-  opacity: 95%;
+  /* opacity: 95%; */
 }
 .The-best-gym {
   background-color: rgb(50, 48, 54);
@@ -155,17 +155,18 @@
 }
 
 .hero_image {
-  width: 23rem;
+  /* height: 50rem; */
+  width: 50rem;
   position: absolute;
-  right: 50%;
-
+  right: 75%;
   bottom: 0;
-  z-index: -1;
+  z-index: 1;
+  transform: scale(1.5) translateY(-15%);
 }
 .hero_image_back {
   position: absolute;
   top: 10%;
-  right: 110%;
+  right: 105%;
   z-index: -3;
 }
 .Calories {
@@ -198,4 +199,18 @@
 .Calories > div > span:nth-child(2) {
   color: white;
   font-size: 1.2rem;
+}
+.partners {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--gray);
+}
+.partners > div {
+  gap: 0.8rem;
+  display: flex;
+}
+.partners > div > img {
+  width: 3.5rem;
 }
