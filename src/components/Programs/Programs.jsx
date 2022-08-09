@@ -5,10 +5,24 @@ import runing from "../../assets/runing.svg";
 import heartHealth from "../../assets/heartHealth.svg";
 import dumbell from "../../assets/dumbell.svg";
 import rightArrow from "../../assets/rightArrow.png";
-
+import { motion } from "framer-motion";
 const ProgramCard = (props) => {
   return (
-    <div className="ProgramCard">
+    <motion.div
+      className="ProgramCard"
+      whileHover={{
+        height: "20rem",
+        gap: "1.5rem",
+        backgroundColor: "#f48915",
+        z: 10,
+        scale: 1.05,
+        transition: {
+          delay: 0.1,
+          duration: 0.2,
+          ease: "easeInOut",
+        },
+      }}
+    >
       <img src={props.image} alt="" />
       <span>{props.title}</span>
       <span>{props.description}</span>
@@ -17,7 +31,7 @@ const ProgramCard = (props) => {
 
         <img src={rightArrow} alt="" srcset="" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

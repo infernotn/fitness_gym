@@ -6,7 +6,7 @@ import hero_image from "../../assets/hero_image.png";
 import hero_image_back from "../../assets/hero_image_back.png";
 import heart from "../../assets/heart.png";
 import calories from "../../assets/calories.png";
-
+import { motion } from "framer-motion";
 export const Hero = () => {
   return (
     <div className="Hero">
@@ -14,7 +14,18 @@ export const Hero = () => {
       <div className="Left-h">
         <Header />
         <div className="The-best-gym">
-          <div></div>
+          <motion.div
+            whileInView={{
+              x: 165,
+              transition: {
+                duration: 1.5,
+                repeat: 1,
+                repeatType: "reverse",
+                repeatDelay: 0.5,
+                ease: "easeInOut",
+              },
+            }}
+          ></motion.div>
           <span>the best gym in the town</span>
         </div>
         <div className="Hero-text">
@@ -58,8 +69,47 @@ export const Hero = () => {
           <span>Heart Rate</span>
           <span>116 bpm</span>
         </div>
-        <img className="hero_image" src={hero_image} alt="" srcset="" />
-        <img
+        <motion.img
+          initial={{
+            opacity: 0.5,
+            scale: 1.3,
+            originX: 0.5,
+            originY: 1,
+          }}
+          whileInView={{
+            opacity: 1,
+            scale: 1.5,
+            transition: {
+              duration: 1,
+            },
+          }}
+          whileHover={{
+            scale: 1.6,
+            originX: 0.5,
+            originY: 1,
+            transition: {
+              duration: 0.5,
+              ease: "easeInOut",
+              type: "spring",
+            },
+          }}
+          className="hero_image"
+          src={hero_image}
+          alt=""
+          srcset=""
+        />
+        <motion.img
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            x: "0.5rem",
+            opacity: 1,
+            transition: {
+              duration: 1,
+              ease: "easeInOut",
+            },
+          }}
           className="hero_image_back"
           src={hero_image_back}
           alt=""

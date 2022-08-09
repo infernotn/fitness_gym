@@ -40,10 +40,16 @@
   padding: 1.5rem;
   border-radius: 0.5rem;
   width: 15rem;
+  min-height: min-content;
 }
 .ProgramCard:hover {
-  background-color: var(--orange);
+  /* background-color: var(--orange);
+  /* height: 2rem; */
+  /* gap: 1.7rem; */
+  /* animation-name: selectProg; */
+  /* animation-duration: 200ms;  */
 }
+
 .ProgramCard > img {
   height: 2rem;
   width: 2rem;

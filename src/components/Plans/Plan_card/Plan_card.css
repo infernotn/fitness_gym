@@ -1,0 +1,64 @@
+.Plan-card {
+  color: white;
+  background: var(--planCard);
+  width: 18rem;
+  height: 25rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  box-shadow: black 0.4rem 0.4rem 1rem 0.2rem;
+}
+.Plan-card img {
+  width: 2.5rem;
+}
+.Plan-card .details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.Plan-card .details div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8rem;
+}
+.Plan-card .details div TiInputChecked {
+  font-size: 3rem;
+  size: 120;
+}
+.Plan-card .details div span {
+  font-size: 1.1rem;
+}
+.Plan-card span:nth-child(2) {
+  font-size: 1.3rem;
+}
+.Plan-card span:nth-child(3) {
+  font-size: 2.5rem;
+}
+.Plan-card div span {
+  font-size: 1.2rem;
+}
+.Plan-card .More {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.Plan-card .join {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Plan-card button {
+  width: 70%;
+  color: var(--orange);
+  background-color: white;
+  border: none;
+  font-size: 1.3rem;
+  border-radius: 0.1rem;
+  padding: 0.2rem 0rem;
+  cursor: pointer;
+}/*# sourceMappingURL=Plan_card.css.map */
