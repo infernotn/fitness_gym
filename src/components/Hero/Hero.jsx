@@ -7,6 +7,7 @@ import hero_image_back from "../../assets/hero_image_back.png";
 import heart from "../../assets/heart.png";
 import calories from "../../assets/calories.png";
 import { motion } from "framer-motion";
+
 export const Hero = () => {
   return (
     <div className="Hero">
